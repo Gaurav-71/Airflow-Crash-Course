@@ -1,0 +1,25 @@
+[2023-04-04T10:11:10.776+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_processing.extract_user manual__2023-04-04T10:11:09.970918+00:00 [queued]>
+[2023-04-04T10:11:10.782+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_processing.extract_user manual__2023-04-04T10:11:09.970918+00:00 [queued]>
+[2023-04-04T10:11:10.782+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T10:11:10.783+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-04T10:11:10.783+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-04T10:11:10.794+0000] {taskinstance.py:1309} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2023-04-04 10:11:09.970918+00:00
+[2023-04-04T10:11:10.799+0000] {standard_task_runner.py:55} INFO - Started process 95836 to run task
+[2023-04-04T10:11:10.801+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'extract_user', 'manual__2023-04-04T10:11:09.970918+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpfoys_ko9']
+[2023-04-04T10:11:10.802+0000] {standard_task_runner.py:83} INFO - Job 30: Subtask extract_user
+[2023-04-04T10:11:10.845+0000] {task_command.py:389} INFO - Running <TaskInstance: user_processing.extract_user manual__2023-04-04T10:11:09.970918+00:00 [running]> on host 1f05588790e0
+[2023-04-04T10:11:10.896+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extract_user
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-04T10:11:09.970918+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-04T10:11:09.970918+00:00
+[2023-04-04T10:11:10.898+0000] {http.py:123} INFO - Calling HTTP method
+[2023-04-04T10:11:10.904+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-04T10:11:11.557+0000] {http.py:127} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Pelle","last":"Leirdal"},"location":{"street":{"number":9182,"name":"Arbeidergata"},"city":"Sønsterud","state":"Vestfold","country":"Norway","postcode":"4119","coordinates":{"latitude":"40.1604","longitude":"-131.9881"},"timezone":{"offset":"-10:00","description":"Hawaii"}},"email":"pelle.leirdal@example.com","login":{"uuid":"c71e0dfe-8718-413f-a5bd-1e2a4e685210","username":"silverswan159","password":"freckles","salt":"IDfGfn8O","md5":"7b50224f0d1420bbb05a763c49e616c9","sha1":"9b0db2c102333f21738f6f6f123e702cce501350","sha256":"252a50766e871176d1c34f50320eddecebabd252cf43dd96e90114f408c49fc2"},"dob":{"date":"1996-09-01T03:07:30.880Z","age":26},"registered":{"date":"2005-04-23T19:33:16.100Z","age":17},"phone":"39453100","cell":"40649635","id":{"name":"FN","value":"01099607935"},"picture":{"large":"https://randomuser.me/api/portraits/men/68.jpg","medium":"https://randomuser.me/api/portraits/med/men/68.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/68.jpg"},"nat":"NO"}],"info":{"seed":"fe6084c73c1e0c2a","results":1,"page":1,"version":"1.4"}}
+[2023-04-04T10:11:11.575+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extract_user, execution_date=20230404T101109, start_date=20230404T101110, end_date=20230404T101111
+[2023-04-04T10:11:11.614+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-04T10:11:11.631+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check
