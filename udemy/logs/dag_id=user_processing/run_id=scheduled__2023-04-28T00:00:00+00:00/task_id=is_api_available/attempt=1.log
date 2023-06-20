@@ -1,0 +1,1944 @@
+[2023-04-29T00:00:03.896+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: user_processing.is_api_available scheduled__2023-04-28T00:00:00+00:00 [queued]>
+[2023-04-29T00:00:03.905+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: user_processing.is_api_available scheduled__2023-04-28T00:00:00+00:00 [queued]>
+[2023-04-29T00:00:03.905+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-29T00:00:03.906+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-29T00:00:03.907+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-29T00:00:03.922+0000] {taskinstance.py:1309} INFO - Executing <Task(HttpSensor): is_api_available> on 2023-04-28 00:00:00+00:00
+[2023-04-29T00:00:03.927+0000] {standard_task_runner.py:55} INFO - Started process 119154 to run task
+[2023-04-29T00:00:03.929+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'is_api_available', 'scheduled__2023-04-28T00:00:00+00:00', '--job-id', '262', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpzcbgvpyd']
+[2023-04-29T00:00:03.930+0000] {standard_task_runner.py:83} INFO - Job 262: Subtask is_api_available
+[2023-04-29T00:00:03.994+0000] {task_command.py:389} INFO - Running <TaskInstance: user_processing.is_api_available scheduled__2023-04-28T00:00:00+00:00 [running]> on host 1f05588790e0
+[2023-04-29T00:00:04.073+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=is_api_available
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-04-28T00:00:00+00:00
+[2023-04-29T00:00:04.075+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:00:04.084+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:00:04.605+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:00:04.605+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:01:04.668+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:01:04.675+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:01:05.118+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:01:05.118+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:02:05.180+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:02:05.187+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:02:05.664+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:02:05.664+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:03:05.724+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:03:05.730+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:03:06.171+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:03:06.172+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:04:06.234+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:04:06.242+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:04:06.744+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:04:06.744+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:05:06.804+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:05:06.813+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:05:07.298+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:05:07.298+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:06:07.356+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:06:07.364+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:06:07.817+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:06:07.817+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:07:07.876+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:07:07.883+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:07:08.338+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:07:08.338+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:08:08.355+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:08:08.363+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:08:08.864+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:08:08.864+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:09:08.924+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:09:08.937+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:09:09.432+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:09:09.433+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:10:09.492+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:10:09.499+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:10:09.962+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:10:09.962+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:11:10.024+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:11:10.031+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:11:10.479+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:11:10.479+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:12:10.540+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:12:10.548+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:12:10.995+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:12:10.995+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:13:11.057+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:13:11.066+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:13:11.540+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:13:11.540+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:14:11.552+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:14:11.561+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:14:12.021+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:14:12.021+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:15:12.080+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:15:12.088+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:15:12.542+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:15:12.542+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:16:12.604+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:16:12.614+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:16:13.087+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:16:13.088+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:17:13.140+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:17:13.148+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:17:13.645+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:17:13.646+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:18:13.708+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:18:13.717+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:18:14.148+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:18:14.148+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:19:14.178+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:19:14.187+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:19:14.697+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:19:14.698+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:20:14.761+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:20:14.769+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:20:15.244+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:20:15.245+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:21:15.307+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:21:15.314+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:21:15.750+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:21:15.751+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:22:15.812+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:22:15.821+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:22:16.295+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:22:16.296+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:23:16.356+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:23:16.364+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:23:16.917+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:23:16.918+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:24:16.980+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:24:16.992+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:24:17.436+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:24:17.436+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:25:17.499+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:25:17.507+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:25:18.018+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:25:18.018+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:26:18.080+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:26:18.090+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:26:18.546+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:26:18.547+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:27:18.608+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:27:18.616+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:27:19.113+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:27:19.113+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:28:19.172+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:28:19.182+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:28:19.664+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:28:19.664+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:29:19.724+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:29:19.732+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:29:20.203+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:29:20.204+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:30:20.246+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:30:20.257+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:30:20.758+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:30:20.758+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:31:20.820+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:31:20.828+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:31:21.292+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:31:21.292+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:32:21.352+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:32:21.360+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:32:21.876+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:32:21.877+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:33:21.939+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:33:21.946+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:33:22.429+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:33:22.429+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:34:22.491+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:34:22.499+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:34:22.974+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:34:22.974+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:35:23.036+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:35:23.049+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:35:23.496+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:35:23.496+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:36:23.559+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:36:23.569+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:36:24.029+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:36:24.029+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:37:24.043+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:37:24.050+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:37:24.499+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:37:24.500+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:38:24.560+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:38:24.568+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:38:25.045+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:38:25.046+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:39:25.108+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:39:25.117+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:39:25.638+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:39:25.638+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:40:25.696+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:40:25.705+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:40:26.139+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:40:26.140+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:41:26.203+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:41:26.210+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:41:26.650+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:41:26.650+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:42:26.712+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:42:26.720+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:42:27.253+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:42:27.254+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:43:27.316+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:43:27.324+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:43:27.841+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:43:27.841+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:44:27.900+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:44:27.908+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:44:28.382+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:44:28.382+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:45:28.438+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:45:28.446+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:45:28.976+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:45:28.977+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:46:29.036+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:46:29.045+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:46:29.497+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:46:29.497+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:47:29.556+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:47:29.564+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:47:30.058+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:47:30.058+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:48:30.108+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:48:30.117+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:48:30.607+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:48:30.607+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:49:30.668+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:49:30.675+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:49:31.114+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:49:31.115+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:50:31.176+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:50:31.184+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:50:31.668+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:50:31.668+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:51:31.712+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:51:31.720+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:51:32.217+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:51:32.218+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:52:32.280+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:52:32.289+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:52:32.729+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:52:32.729+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:53:32.790+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:53:32.798+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:53:33.267+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:53:33.267+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:54:33.328+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:54:33.336+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:54:33.774+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:54:33.775+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:55:33.836+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:55:33.844+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:55:34.355+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:55:34.355+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:56:34.416+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:56:34.424+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:56:34.946+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:56:34.946+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:57:35.008+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:57:35.018+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:57:36.184+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:57:36.184+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:58:36.244+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:58:36.254+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:58:36.737+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:58:36.737+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T00:59:36.788+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T00:59:36.796+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T00:59:37.244+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T00:59:37.244+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:00:37.307+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:00:37.315+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:00:37.834+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:00:37.835+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:01:37.869+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:01:37.877+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:01:38.521+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:01:38.521+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:02:38.584+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:02:38.592+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:02:39.090+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:02:39.091+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:03:39.152+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:03:39.161+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:03:39.621+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:03:39.622+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:04:39.684+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:04:39.692+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:04:40.197+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:04:40.197+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:05:40.256+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:05:40.267+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:05:40.773+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:05:40.773+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:06:40.836+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:06:40.845+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:06:41.323+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:06:41.324+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:07:41.384+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:07:41.393+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:07:41.839+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:07:41.840+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:08:41.876+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:08:41.883+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:08:42.345+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:08:42.345+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:09:42.404+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:09:42.413+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:09:42.862+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:09:42.863+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:10:42.924+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:10:42.934+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:10:43.417+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:10:43.418+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:11:43.481+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:11:43.489+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:11:43.959+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:11:43.960+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:12:43.992+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:12:44.000+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:12:44.499+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:12:44.499+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:13:44.560+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:13:44.569+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:13:45.047+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:13:45.047+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:14:45.110+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:14:45.119+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:14:45.601+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:14:45.601+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:15:45.664+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:15:45.672+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:15:46.188+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:15:46.188+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:16:46.248+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:16:46.255+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:16:46.711+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:16:46.711+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:17:46.761+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:17:46.768+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:17:47.235+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:17:47.236+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:18:47.298+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:18:47.306+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:18:47.786+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:18:47.786+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:19:47.847+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:19:47.855+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:19:48.331+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:19:48.331+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:20:48.394+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:20:48.402+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:20:48.888+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:20:48.888+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:21:48.948+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:21:48.957+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:21:49.429+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:21:49.429+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:22:49.488+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:22:49.495+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:22:50.043+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:22:50.043+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:23:50.076+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:23:50.086+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:23:50.522+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:23:50.523+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:24:50.587+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:24:50.595+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:24:51.089+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:24:51.089+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:25:51.148+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:25:51.156+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:25:51.662+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:25:51.663+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:26:51.724+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:26:51.735+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:26:52.207+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:26:52.207+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:27:52.270+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:27:52.277+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:27:52.788+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:27:52.788+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:28:52.848+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:28:52.856+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:28:53.297+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:28:53.297+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:29:53.356+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:29:53.364+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:29:53.847+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:29:53.847+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:30:53.908+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:30:53.916+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:30:55.319+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:30:55.319+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:31:55.380+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:31:55.388+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:31:55.896+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:31:55.897+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:32:55.960+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:32:55.968+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:32:56.399+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:32:56.400+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:33:56.460+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:33:56.468+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:33:56.905+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:33:56.906+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:34:56.968+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:34:56.976+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:34:57.492+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:34:57.493+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:35:57.552+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:35:57.563+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:35:58.019+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:35:58.019+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:36:58.082+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:36:58.089+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:36:58.602+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:36:58.603+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:37:58.664+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:37:58.671+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:37:59.166+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:37:59.166+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:38:59.225+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:38:59.233+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:38:59.719+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:38:59.719+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:39:59.724+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:39:59.732+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:40:00.211+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:40:00.211+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:41:00.273+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:41:00.283+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:41:00.735+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:41:00.735+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:42:00.797+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:42:00.806+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:42:01.261+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:42:01.261+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:43:01.324+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:43:01.331+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:43:01.791+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:43:01.791+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:44:01.852+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:44:01.861+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:44:02.347+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:44:02.348+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:45:02.404+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:45:02.414+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:45:02.890+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:45:02.890+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:46:02.945+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:46:02.953+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:46:03.444+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:46:03.444+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:47:03.504+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:47:03.513+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:47:03.943+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:47:03.943+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:48:04.005+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:48:04.013+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:48:04.452+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:48:04.453+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:49:04.512+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:49:04.524+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:49:04.962+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:49:04.962+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:50:05.004+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:50:05.013+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:50:05.458+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:50:05.458+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:51:05.520+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:51:05.528+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:51:05.978+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:51:05.978+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:52:06.036+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:52:06.046+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:52:06.555+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:52:06.555+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:53:06.616+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:53:06.623+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:53:07.081+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:53:07.081+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:54:07.140+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:54:07.148+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:54:07.655+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:54:07.656+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:55:07.720+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:55:07.727+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:55:08.183+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:55:08.183+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:56:08.245+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:56:08.254+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:56:08.695+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:56:08.695+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:57:08.756+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:57:08.764+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:57:09.267+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:57:09.268+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:58:09.317+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:58:09.325+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:58:09.826+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:58:09.826+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T01:59:09.888+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T01:59:09.897+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T01:59:10.353+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T01:59:10.353+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:00:10.411+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:00:10.418+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:00:10.884+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:00:10.884+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:01:10.940+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:01:10.947+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:01:11.437+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:01:11.438+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:02:11.468+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:02:11.475+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:02:11.983+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:02:11.983+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:03:12.044+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:03:12.051+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:03:12.487+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:03:12.487+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:04:12.548+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:04:12.556+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:04:13.004+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:04:13.005+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:05:13.067+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:05:13.074+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:05:13.566+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:05:13.566+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:06:13.628+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:06:13.636+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:06:14.085+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:06:14.085+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:07:14.147+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:07:14.157+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:07:14.664+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:07:14.664+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:08:14.724+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:08:14.735+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:08:15.232+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:08:15.232+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:09:15.292+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:09:15.301+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:09:15.807+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:09:15.807+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:10:15.860+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:10:15.868+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:10:16.366+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:10:16.366+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:11:16.428+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:11:16.438+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:11:16.926+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:11:16.927+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:12:16.956+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:12:16.967+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:12:17.429+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:12:17.430+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:13:17.485+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:13:17.497+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:13:18.016+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:13:18.016+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:14:18.076+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:14:18.085+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:14:18.551+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:14:18.551+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:15:18.608+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:15:18.616+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:15:19.091+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:15:19.092+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:16:19.152+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:16:19.160+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:16:19.617+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:16:19.617+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:17:19.672+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:17:19.681+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:17:20.148+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:17:20.148+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:18:20.208+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:18:20.216+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:18:20.723+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:18:20.723+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:19:20.786+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:19:20.794+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:19:22.008+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:19:22.008+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:20:22.071+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:20:22.079+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:20:22.551+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:20:22.552+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:21:22.612+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:21:22.621+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:21:23.079+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:21:23.079+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:22:23.140+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:22:23.150+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:22:23.630+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:22:23.630+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:23:23.693+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:23:23.701+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:23:24.189+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:23:24.190+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:24:24.245+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:24:24.252+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:24:24.739+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:24:24.739+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:25:24.802+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:25:24.809+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:25:25.311+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:25:25.311+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:26:25.344+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:26:25.355+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:26:25.793+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:26:25.793+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:27:25.856+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:27:25.864+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:27:26.379+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:27:26.379+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:28:26.412+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:28:26.421+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:28:26.869+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:28:26.870+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:29:26.924+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:29:26.932+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:29:27.432+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:29:27.432+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:30:27.494+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:30:27.505+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:30:27.940+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:30:27.941+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:31:28.000+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:31:28.035+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:31:28.545+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:31:28.545+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:32:28.604+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:32:28.612+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:32:29.111+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:32:29.111+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:33:29.172+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:33:29.179+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:33:29.713+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:33:29.713+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:34:29.768+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:34:29.778+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:34:30.280+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:34:30.281+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:35:30.343+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:35:30.350+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:35:30.855+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:35:30.856+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:36:30.919+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:36:30.926+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:36:31.394+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:36:31.394+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:37:31.456+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:37:31.464+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:37:31.963+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:37:31.963+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:38:32.024+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:38:32.031+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:38:32.607+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:38:32.608+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:39:32.633+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:39:32.643+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:39:33.106+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:39:33.106+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:40:33.169+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:40:33.179+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:40:33.680+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:40:33.681+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:41:33.743+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:41:33.750+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:41:34.182+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:41:34.183+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:42:34.245+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:42:34.252+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:42:34.705+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:42:34.705+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:43:34.764+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:43:34.775+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:43:35.243+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:43:35.244+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:44:35.282+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:44:35.289+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:44:35.747+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:44:35.747+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:45:35.808+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:45:35.817+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:45:36.269+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:45:36.270+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:46:36.290+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:46:36.298+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:46:36.797+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:46:36.798+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:47:36.860+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:47:36.868+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:47:37.366+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:47:37.366+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:48:37.429+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:48:37.441+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:48:37.888+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:48:37.888+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:49:37.948+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:49:37.956+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:49:38.419+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:49:38.420+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:50:38.477+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:50:38.485+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:50:38.967+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:50:38.967+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:51:39.029+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:51:39.036+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:51:39.532+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:51:39.532+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:52:39.594+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:52:39.608+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:52:40.052+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:52:40.052+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:53:40.112+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:53:40.120+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:53:40.557+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:53:40.557+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:54:40.616+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:54:40.624+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:54:41.151+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:54:41.151+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:55:41.212+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:55:41.220+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:55:41.709+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:55:41.709+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:56:41.768+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:56:41.775+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:56:42.308+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:56:42.308+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:57:42.368+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:57:42.376+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:57:42.871+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:57:42.871+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:58:42.932+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:58:42.941+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:58:43.406+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:58:43.407+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T02:59:43.470+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T02:59:43.479+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T02:59:43.967+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T02:59:43.967+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:00:44.028+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:00:44.037+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:00:44.480+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:00:44.480+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:01:44.544+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:01:44.551+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:01:45.055+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:01:45.055+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:02:45.116+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:02:45.125+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:02:45.612+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:02:45.613+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:03:45.672+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:03:45.681+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:03:46.163+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:03:46.163+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:04:46.206+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:04:46.216+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:04:46.707+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:04:46.707+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:05:46.768+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:05:46.778+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:05:47.305+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:05:47.306+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:06:47.368+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:06:47.376+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:06:47.840+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:06:47.841+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:07:47.896+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:07:47.904+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:07:48.381+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:07:48.381+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:08:48.440+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:08:48.448+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:08:48.931+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:08:48.931+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:09:48.992+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:09:49.000+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:09:49.438+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:09:49.438+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:10:49.500+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:10:49.508+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:10:49.995+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:10:49.995+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:11:50.058+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:11:50.065+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:11:50.543+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:11:50.544+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:12:50.604+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:12:50.612+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:12:51.059+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:12:51.059+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:13:51.120+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:13:51.129+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:13:51.634+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:13:51.635+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:14:51.696+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:14:51.703+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:14:52.163+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:14:52.164+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:15:52.227+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:15:52.236+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:15:52.734+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:15:52.734+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:16:52.796+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:16:52.805+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:16:53.265+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:16:53.265+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:17:53.324+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:17:53.332+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:17:54.750+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:17:54.751+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:18:54.812+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:18:54.821+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:18:55.401+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:18:55.402+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:19:55.460+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:19:55.470+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:19:55.978+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:19:55.979+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:20:56.040+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:20:56.049+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:20:56.562+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:20:56.562+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:21:56.621+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:21:56.629+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:21:57.138+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:21:57.138+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:22:57.200+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:22:57.211+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:22:57.699+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:22:57.699+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:23:57.760+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:23:57.767+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:23:58.215+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:23:58.216+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:24:58.276+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:24:58.287+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:24:58.790+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:24:58.791+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:25:58.852+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:25:58.861+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:25:59.328+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:25:59.328+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:26:59.391+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:26:59.398+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:26:59.853+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:26:59.854+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:27:59.916+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:27:59.926+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:28:00.449+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:28:00.449+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:29:00.512+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:29:00.523+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:29:01.005+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:29:01.006+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:30:01.068+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:30:01.075+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:30:01.567+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:30:01.567+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:31:01.628+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:31:01.636+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:31:02.100+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:31:02.100+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:32:02.160+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:32:02.168+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:32:02.638+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:32:02.638+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:33:02.700+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:33:02.709+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:33:03.200+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:33:03.200+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:34:03.260+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:34:03.267+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:34:03.744+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:34:03.744+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:35:03.804+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:35:03.812+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:35:04.318+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:35:04.318+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:36:04.380+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:36:04.387+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:36:04.873+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:36:04.874+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:37:04.937+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:37:04.944+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:37:05.447+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:37:05.447+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:38:05.508+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:38:05.517+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:38:05.981+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:38:05.982+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:39:06.044+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:39:06.052+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:39:06.519+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:39:06.519+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:40:06.580+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:40:06.592+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:40:07.057+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:40:07.057+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:41:07.119+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:41:07.126+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:41:07.625+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:41:07.626+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:42:07.684+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:42:07.692+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:42:08.204+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:42:08.205+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:43:08.267+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:43:08.275+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:43:08.737+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:43:08.737+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:44:08.794+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:44:08.801+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:44:09.312+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:44:09.312+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:45:09.372+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:45:09.381+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:45:09.962+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:45:09.963+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:46:10.025+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:46:10.033+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:46:10.519+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:46:10.519+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:47:10.582+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:47:10.589+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:47:11.126+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:47:11.126+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:48:11.188+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:48:11.195+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:48:11.688+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:48:11.688+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:49:11.748+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:49:11.756+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:49:12.273+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:49:12.274+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:50:12.332+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:50:12.339+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:50:12.860+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:50:12.860+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:51:12.922+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:51:12.930+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:51:13.436+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:51:13.436+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:52:13.499+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:52:13.507+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:52:14.017+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:52:14.018+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:53:14.070+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:53:14.077+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:53:14.576+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:53:14.577+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:54:14.620+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:54:14.629+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:54:15.088+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:54:15.088+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:55:15.148+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:55:15.157+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:55:15.607+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:55:15.608+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:56:15.668+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:56:15.676+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:56:16.174+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:56:16.174+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:57:16.236+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:57:16.244+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:57:16.794+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:57:16.795+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:58:16.856+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:58:16.864+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:58:17.383+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:58:17.384+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T03:59:17.444+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T03:59:17.454+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T03:59:17.978+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T03:59:17.979+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:00:18.041+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:00:18.049+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:00:18.532+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:00:18.532+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:01:18.594+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:01:18.608+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:01:19.163+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:01:19.164+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:02:19.224+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:02:19.231+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:02:19.709+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:02:19.710+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:03:19.768+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:03:19.778+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:03:20.288+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:03:20.288+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:04:20.351+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:04:20.360+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:04:20.862+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:04:20.863+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:05:20.921+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:05:20.928+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:05:21.436+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:05:21.436+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:06:21.496+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:06:21.504+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:06:21.956+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:06:21.956+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:07:22.015+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:07:22.023+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:07:22.488+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:07:22.488+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:08:22.550+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:08:22.558+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:08:23.061+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:08:23.061+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:09:23.124+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:09:23.131+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:09:23.650+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:09:23.651+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:10:23.916+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:10:23.924+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:10:24.416+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:10:24.417+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:11:24.476+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:11:24.484+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:11:25.232+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:11:25.232+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:12:25.293+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:12:25.303+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:12:25.790+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:12:25.790+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:13:25.852+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:13:25.860+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:13:26.366+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:13:26.366+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:14:26.428+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:14:26.438+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:14:26.944+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:14:26.944+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:15:27.007+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:15:27.016+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:15:27.539+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:15:27.540+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:16:27.600+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:16:27.607+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:16:28.089+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:16:28.090+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:17:28.152+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:17:28.159+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:17:28.679+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:17:28.680+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:18:28.737+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:18:28.749+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:18:29.261+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:18:29.262+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:19:29.324+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:19:29.334+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:19:29.840+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:19:29.840+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:20:29.900+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:20:29.907+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:20:30.411+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:20:30.411+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:21:30.472+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:21:30.479+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:21:30.994+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:21:30.995+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:22:31.264+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:22:31.272+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:22:31.751+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:22:31.751+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:23:31.812+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:23:31.819+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:23:32.327+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:23:32.328+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:24:32.388+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:24:32.396+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:24:32.844+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:24:32.844+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:25:32.908+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:25:32.916+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:25:33.372+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:25:33.372+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:26:33.434+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:26:33.442+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:26:33.948+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:26:33.949+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:27:33.996+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:27:34.006+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:27:34.485+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:27:34.485+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:28:34.544+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:28:34.551+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:28:35.238+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:28:35.238+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:29:35.300+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:29:35.318+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:29:35.783+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:29:35.783+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:30:35.844+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:30:35.852+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:30:36.301+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:30:36.302+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:31:36.354+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:31:36.366+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:31:36.921+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:31:36.921+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:32:36.980+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:32:36.987+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:32:37.487+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:32:37.487+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:33:37.539+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:33:37.549+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:33:38.026+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:33:38.026+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:34:38.085+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:34:38.092+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:34:38.550+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:34:38.551+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:35:38.612+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:35:38.619+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:35:39.126+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:35:39.126+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:36:39.186+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:36:39.195+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:36:39.657+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:36:39.657+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:37:39.716+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:37:39.725+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:37:40.199+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:37:40.200+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:38:40.263+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:38:40.271+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:38:41.166+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:38:41.166+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:39:41.228+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:39:41.235+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:39:41.709+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:39:41.709+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:40:41.772+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:40:41.780+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:40:42.261+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:40:42.262+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:41:42.276+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:41:42.286+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:41:42.770+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:41:42.770+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:42:42.833+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:42:42.840+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:42:43.351+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:42:43.352+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:43:43.414+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:43:43.423+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:43:43.907+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:43:43.907+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:44:43.968+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:44:43.976+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:44:44.465+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:44:44.466+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:45:44.529+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:45:44.537+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:45:45.038+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:45:45.038+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:46:45.260+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:46:45.270+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:46:45.741+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:46:45.742+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:47:45.804+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:47:45.813+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:47:46.346+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:47:46.346+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:48:46.404+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:48:46.412+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:48:46.900+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:48:46.900+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:49:46.960+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:49:46.970+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:49:47.463+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:49:47.463+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:50:47.524+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:50:47.534+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:50:48.019+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:50:48.020+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:51:48.081+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:51:48.089+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:51:48.612+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:51:48.613+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:52:48.676+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:52:48.683+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:52:49.138+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:52:49.139+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:53:49.201+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:53:49.210+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:53:49.720+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:53:49.720+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:54:49.780+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:54:49.788+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:54:50.242+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:54:50.242+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:55:50.304+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:55:50.311+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:55:50.839+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:55:50.839+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:56:50.900+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:56:50.909+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:56:51.373+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:56:51.373+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:57:51.619+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:57:51.627+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:57:52.118+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:57:52.118+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:58:52.181+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:58:52.188+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:58:52.644+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:58:52.645+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T04:59:52.915+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T04:59:52.923+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T04:59:53.450+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T04:59:53.450+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:00:53.509+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:00:53.516+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:00:54.337+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:00:54.337+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:01:54.397+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:01:54.406+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:01:54.902+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:01:54.903+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:02:54.964+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:02:54.982+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:02:55.456+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:02:55.456+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:03:55.516+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:03:55.524+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:03:56.024+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:03:56.024+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:04:56.084+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:04:56.092+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:04:56.556+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:04:56.557+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:05:56.608+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:05:56.616+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:05:57.092+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:05:57.093+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:06:57.143+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:06:57.153+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:06:57.645+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:06:57.646+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:07:57.708+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:07:57.716+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:07:58.223+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:07:58.223+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:08:58.284+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:08:58.292+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:08:58.767+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:08:58.768+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:09:58.831+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:09:58.838+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:09:59.335+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:09:59.335+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:10:59.397+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:10:59.405+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:10:59.933+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:10:59.933+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:11:59.984+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:11:59.991+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:12:00.514+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:12:00.515+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:13:00.576+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:13:00.585+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:13:01.041+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:13:01.041+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:14:01.100+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:14:01.109+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:14:01.674+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:14:01.675+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:15:01.693+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:15:01.700+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:15:02.275+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:15:02.276+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:16:02.336+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:16:02.347+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:16:02.873+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:16:02.874+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:17:02.936+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:17:02.944+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:17:03.455+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:17:03.455+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:18:03.516+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:18:03.525+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:18:04.077+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:18:04.077+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:19:04.140+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:19:04.150+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:19:04.591+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:19:04.591+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:20:04.653+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:20:04.661+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:20:05.191+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:20:05.192+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:21:05.249+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:21:05.256+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:21:05.700+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:21:05.701+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:22:05.762+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:22:05.769+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:22:06.265+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:22:06.266+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:23:06.323+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:23:06.330+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:23:06.856+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:23:06.857+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:24:06.916+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:24:06.924+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:24:07.385+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:24:07.386+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:25:07.448+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:25:07.458+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:25:07.969+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:25:07.970+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:26:08.028+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:26:08.036+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:26:08.494+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:26:08.494+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:27:08.556+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:27:08.564+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:27:09.031+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:27:09.031+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:28:09.092+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:28:09.100+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:28:09.644+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:28:09.644+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:29:09.705+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:29:09.710+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:29:10.206+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:29:10.206+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:30:10.268+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:30:10.280+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:30:10.770+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:30:10.770+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:31:10.832+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:31:10.841+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:31:11.309+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:31:11.309+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:32:11.368+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:32:11.379+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:32:11.870+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:32:11.870+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:33:11.932+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:33:11.942+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:33:12.438+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:33:12.438+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:34:12.501+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:34:12.511+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:34:13.054+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:34:13.055+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:35:13.116+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:35:13.125+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:35:13.645+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:35:13.645+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:36:13.704+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:36:13.714+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:36:14.164+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:36:14.165+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:37:14.228+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:37:14.236+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:37:14.740+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:37:14.741+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:38:14.792+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:38:14.801+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:38:15.251+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:38:15.251+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:39:15.304+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:39:15.313+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:39:15.822+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:39:15.823+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:40:15.884+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:40:15.892+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:40:16.351+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:40:16.351+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:41:16.364+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:41:16.375+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:41:16.914+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:41:16.914+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:42:16.976+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:42:16.986+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:42:17.753+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:42:17.753+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:43:17.812+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:43:17.820+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:43:18.296+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:43:18.296+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:44:18.356+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:44:18.374+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:44:18.885+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:44:18.886+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:45:18.941+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:45:18.949+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:45:19.471+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:45:19.472+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:46:19.534+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:46:19.542+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:46:20.005+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:46:20.005+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:47:20.057+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:47:20.065+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:47:20.559+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:47:20.559+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:48:20.620+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:48:20.629+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:48:21.119+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:48:21.119+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:49:21.180+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:49:21.195+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:49:21.721+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:49:21.721+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:50:21.782+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:50:21.790+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:50:22.305+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:50:22.305+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:51:22.368+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:51:22.377+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:51:22.909+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:51:22.909+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:52:22.972+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:52:22.983+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:52:23.494+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:52:23.494+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:53:23.556+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:53:23.563+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:53:24.026+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:53:24.027+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:54:24.090+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:54:24.097+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:54:24.544+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:54:24.544+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:55:24.605+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:55:24.613+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:55:25.103+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:55:25.104+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:56:25.164+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:56:25.173+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:56:25.703+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:56:25.704+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:57:25.767+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:57:25.774+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:57:26.227+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:57:26.228+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:58:26.281+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:58:26.289+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:58:26.788+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:58:26.788+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T05:59:26.850+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T05:59:26.857+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T05:59:27.324+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T05:59:27.324+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:00:27.364+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:00:27.371+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:00:27.826+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:00:27.826+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:00:49.360+0000] {taskinstance.py:1084} INFO - Dependencies not met for <TaskInstance: user_processing.is_api_available scheduled__2023-04-28T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2023-04-29T06:00:49.360+0000] {taskinstance.py:1084} INFO - Dependencies not met for <TaskInstance: user_processing.is_api_available scheduled__2023-04-28T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2023-04-29T06:00:49.361+0000] {local_task_job.py:151} INFO - Task is not able to be run
+[2023-04-29T06:01:27.888+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:01:27.896+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:01:28.451+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:01:28.452+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:02:28.512+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:02:28.520+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:02:28.961+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:02:28.961+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:03:29.020+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:03:29.030+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:03:29.470+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:03:29.470+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:04:29.532+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:04:29.541+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:04:30.052+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:04:30.053+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:05:30.064+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:05:30.072+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:05:30.563+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:05:30.563+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:06:30.625+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:06:30.635+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:06:31.092+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:06:31.092+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:07:31.155+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:07:31.164+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:07:31.933+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:07:31.934+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:08:31.973+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:08:31.981+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:08:32.442+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:08:32.443+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:09:32.505+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:09:32.514+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:09:32.959+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:09:32.960+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:10:33.020+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:10:33.028+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:10:33.501+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:10:33.502+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:11:33.562+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:11:33.571+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:11:34.067+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:11:34.068+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:12:34.124+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:12:34.131+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:12:34.596+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:12:34.597+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:13:34.656+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:13:34.664+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:13:35.158+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:13:35.158+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:14:35.220+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:14:35.228+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:14:35.719+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:14:35.719+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:15:35.783+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:15:35.791+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:15:36.279+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:15:36.280+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:16:36.340+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:16:36.348+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:16:36.840+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:16:36.840+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:17:36.903+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:17:36.914+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:17:37.431+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:17:37.431+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:18:37.492+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:18:37.501+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:18:37.955+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:18:37.955+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:19:38.016+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:19:38.023+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:19:38.550+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:19:38.550+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:20:38.612+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:20:38.620+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:20:39.151+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:20:39.151+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:21:39.212+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:21:39.221+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:21:39.812+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:21:39.812+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:22:39.872+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:22:39.879+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:22:40.420+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:22:40.421+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:23:40.484+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:23:40.493+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:23:41.038+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:23:41.038+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:24:41.100+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:24:41.110+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:24:41.600+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:24:41.601+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:25:41.662+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:25:41.670+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:25:42.247+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:25:42.248+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:26:42.310+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:26:42.318+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:26:42.816+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:26:42.817+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:27:42.876+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:27:42.884+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:27:43.466+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:27:43.466+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:28:43.516+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:28:43.525+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:28:44.059+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:28:44.059+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:29:44.120+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:29:44.128+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:29:44.598+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:29:44.598+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:30:44.661+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:30:44.672+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:30:45.201+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:30:45.201+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:31:45.260+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:31:45.267+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:31:45.738+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:31:45.739+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:32:45.800+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:32:45.809+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:32:46.334+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:32:46.334+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:33:46.396+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:33:46.404+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:33:46.950+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:33:46.950+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:34:47.013+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:34:47.024+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:34:47.618+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:34:47.618+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:35:47.677+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:35:47.689+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:35:48.159+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:35:48.159+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:36:48.220+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:36:48.228+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:36:48.722+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:36:48.722+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:37:48.780+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:37:48.789+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:37:49.320+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:37:49.320+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:38:49.380+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:38:49.388+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:38:49.855+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:38:49.856+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:39:49.912+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:39:49.923+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:39:50.461+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:39:50.461+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:40:50.520+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:40:50.529+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:40:50.979+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:40:50.979+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:41:51.037+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:41:51.046+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:41:51.577+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:41:51.577+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:42:51.636+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:42:51.645+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:42:52.150+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:42:52.151+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:43:52.212+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:43:52.220+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:43:52.709+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:43:52.709+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:44:52.771+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:44:52.779+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:44:53.221+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:44:53.222+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:45:53.280+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:45:53.288+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:45:53.788+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:45:53.788+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:46:53.832+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:46:53.839+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:46:54.358+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:46:54.359+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:47:54.420+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:47:54.428+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:47:54.895+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:47:54.895+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:48:54.957+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:48:54.990+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:48:55.503+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:48:55.503+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:49:55.564+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:49:55.572+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:49:56.070+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:49:56.071+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:50:56.132+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:50:56.141+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:50:56.668+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:50:56.668+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:51:56.716+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:51:56.723+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:51:57.449+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:51:57.449+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:52:57.484+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:52:57.491+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:52:58.051+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:52:58.052+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:53:58.112+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:53:58.122+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:53:58.610+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:53:58.610+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:54:58.672+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:54:58.679+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:54:59.263+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:54:59.263+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:55:59.304+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:55:59.314+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:55:59.859+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:55:59.859+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:56:59.902+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:56:59.912+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:57:00.421+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:57:00.421+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:58:00.480+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:58:00.488+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:58:01.001+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:58:01.001+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T06:59:01.012+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T06:59:01.019+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T06:59:01.548+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T06:59:01.549+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:00:01.612+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:00:01.621+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:00:02.174+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:00:02.174+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:01:02.237+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:01:02.244+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:01:02.795+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:01:02.795+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:02:02.856+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:02:02.870+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:02:03.367+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:02:03.368+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:03:03.430+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:03:03.439+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:03:03.930+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:03:03.931+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:04:03.993+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:04:04.001+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:04:04.518+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:04:04.518+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:05:04.581+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:05:04.589+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:05:05.178+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:05:05.178+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:06:05.236+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:06:05.245+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:06:05.753+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:06:05.753+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:07:05.816+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:07:05.824+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:07:06.338+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:07:06.338+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:08:06.400+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:08:06.409+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:08:06.930+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:08:06.930+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:09:06.992+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:09:07.026+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:09:07.565+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:09:07.566+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:10:07.624+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:10:07.635+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:10:08.165+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:10:08.165+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:11:08.227+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:11:08.234+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:11:08.747+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:11:08.748+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:12:08.808+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:12:08.816+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:12:09.358+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:12:09.358+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:13:09.420+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:13:09.429+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:13:09.958+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:13:09.958+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:14:10.020+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:14:10.057+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:14:10.586+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:14:10.586+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:15:10.621+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:15:10.628+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:15:11.149+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:15:11.149+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:16:11.210+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:16:11.218+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:16:11.700+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:16:11.700+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:17:11.758+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:17:11.766+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:17:12.283+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:17:12.283+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:18:12.346+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:18:12.354+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:18:12.895+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:18:12.895+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:19:12.956+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:19:12.966+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:19:13.484+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:19:13.484+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:20:13.544+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:20:13.552+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:20:14.076+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:20:14.076+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:21:14.128+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:21:14.136+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:21:14.629+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:21:14.630+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:22:14.692+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:22:14.699+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:22:15.228+0000] {http.py:170} ERROR - HTTP error: Not Found
+[2023-04-29T07:22:15.228+0000] {http.py:171} ERROR - Not Found
+[2023-04-29T07:23:15.288+0000] {http.py:122} INFO - Poking: https://randomuser.me/
+[2023-04-29T07:23:15.297+0000] {base.py:73} INFO - Using connection ID 'user_api' for task execution.
+[2023-04-29T07:23:15.806+0000] {http.py:170} ERROR - HTTP error: 
+[2023-04-29T07:23:15.806+0000] {http.py:171} ERROR - <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+
+
+<title>randomuser.me | 520: Web server is returning an unknown error</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+</head>
+<body>
+<div id="cf-wrapper">
+
+    
+
+    <div id="cf-error-details" class="p-0">
+        <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-8">
+            <h1 class="inline-block sm:block sm:mb-2 font-light text-60 lg:text-4xl text-black-dark leading-tight mr-2">
+              
+              <span class="inline-block">Web server is returning an unknown error</span>
+              <span class="code-label">Error code 520</span>
+            </h1>
+            <div>
+               Visit <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=randomuser.me" target="_blank" rel="noopener noreferrer">cloudflare.com</a> for more information.
+            </div>
+            <div class="mt-3">2023-04-29 07:23:15 UTC</div>
+        </header>
+        
+        <div class="my-8 bg-gradient-gray">
+            <div class="w-240 lg:w-full mx-auto">
+                <div class="clearfix md:px-8">
+                  
+<div id="cf-browser-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-browser block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">You</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Browser
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-cloudflare-status" class=" relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=randomuser.me" target="_blank" rel="noopener noreferrer">
+    <span class="cf-icon-cloud block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-ok w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    </a>
+  </div>
+  <span class="md:block w-full truncate">Singapore</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    <a href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=randomuser.me" target="_blank" rel="noopener noreferrer">
+    Cloudflare
+    </a>
+  </h3>
+  <span class="leading-1.3 text-2xl text-green-success">Working</span>
+</div>
+
+<div id="cf-host-status" class="cf-error-source relative w-1/3 md:w-full py-15 md:p-0 md:py-8 md:text-left md:border-solid md:border-0 md:border-b md:border-gray-400 overflow-hidden float-left md:float-none text-center">
+  <div class="relative mb-10 md:m-0">
+    
+    <span class="cf-icon-server block md:hidden h-20 bg-center bg-no-repeat"></span>
+    <span class="cf-icon-error w-12 h-12 absolute left-1/2 md:left-auto md:right-0 md:top-0 -ml-6 -bottom-4"></span>
+    
+  </div>
+  <span class="md:block w-full truncate">randomuser.me</span>
+  <h3 class="md:inline-block mt-3 md:mt-0 text-2xl text-gray-600 font-light leading-1.3">
+    
+    Host
+    
+  </h3>
+  <span class="leading-1.3 text-2xl text-red-error">Error</span>
+</div>
+
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+            <div class="clearfix">
+                <div class="w-1/2 md:w-full float-left pr-6 md:pb-10 md:pr-0 leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What happened?</h2>
+                    <p>There is an unknown connection issue between Cloudflare and the origin web server. As a result, the web page can not be displayed.</p>
+                </div>
+              
+                <div class="w-1/2 md:w-full float-left leading-relaxed">
+                    <h2 class="text-3xl font-normal leading-1.3 mb-4">What can I do?</h2>
+                          <h3 class="text-15 font-semibold mb-2">If you are a visitor of this website:</h3>
+      <p class="mb-6">Please try again in a few minutes.</p>
+
+      <h3 class="text-15 font-semibold mb-2">If you are the owner of this website:</h3>
+      <p><span>There is an issue between Cloudflare's cache and your origin web server. Cloudflare monitors for these errors and automatically investigates the cause. To help support the investigation, you can pull the corresponding error log from your web server and submit it our support team.  Please include the Ray ID (which is at the bottom of this error page).</span> <a rel="noopener noreferrer" href="https://support.cloudflare.com/hc/en-us/articles/200171936-Error-520">Additional troubleshooting resources</a>.</p>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">7bf5cc6e1eb14aad</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">121.244.55.198</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing?utm_source=errorcode_520&utm_campaign=randomuser.me" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+[2023-04-29T07:23:15.818+0000] {taskinstance.py:1776} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 168, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 520 Server Error:  for url: https://randomuser.me/https://randomuser.me/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 199, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/sensors/http.py", line 137, in poke
+    raise exc
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/sensors/http.py", line 128, in poke
+    extra_options=self.extra_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 158, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 211, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 172, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 520:
+[2023-04-29T07:23:15.822+0000] {taskinstance.py:1332} INFO - Marking task as FAILED. dag_id=user_processing, task_id=is_api_available, execution_date=20230428T000000, start_date=20230429T000003, end_date=20230429T072315
+[2023-04-29T07:23:15.838+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 262 for task is_api_available (520:; 119154)
+[2023-04-29T07:23:15.860+0000] {local_task_job.py:212} INFO - Task exited with return code 1
+[2023-04-29T07:23:15.898+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

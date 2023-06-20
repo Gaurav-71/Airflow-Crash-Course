@@ -4,8 +4,8 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 
 default_args = {
-    'owner':'gvinay',
-    'retries':5,
+    'owner': 'gvinay',
+    'retries': 5,
     'retry_delay': timedelta(minutes=2)
 }
 
@@ -14,7 +14,7 @@ with DAG(
     default_args=default_args,
     description="This is the first dag",
     start_date=datetime(2023, 3, 31, 1),
-    schedule_interval='@daily'
+    schedule='@daily'
 ) as dag:
     task1 = BashOperator(
         task_id='first_task',
@@ -27,4 +27,3 @@ with DAG(
     )
 
     task1.set_downstream(task2)
-
